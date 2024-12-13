@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+ summary
+{% endblock title %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100 ">
+    <div class="content-box bg-black">
+<h1>Quiz Summary</h1>
+<p>Total Questions: {{ total_questions }}</p>
+<p>Correct Answers: {{ correct_answers }}</p>
+<p>Incorrect Answers: {{ incorrect_answers }}</p>
+<a href="{% url 'start_quiz' %} "class='btn btn-primary'>Restart Quiz</a>
+    </div>
+
+</div>
+{% endblock content %}

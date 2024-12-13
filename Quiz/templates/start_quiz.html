@@ -1,0 +1,15 @@
+
+    {% extends "layout.html" %}
+
+    {% block title %}
+    
+     start quiz
+    {% endblock title %}
+    
+    {% block content %}
+    <div class="d-flex justify-content-center align-items-center vh-100">
+    <h1 class='text-center fw-bold'>{{ message }}</h1>
+    <a href="{% url 'get_question' %}" class='btn btn-primary fw-bold center'>Start Quiz!</a>
+    </div>
+    {% endblock content %}
+    

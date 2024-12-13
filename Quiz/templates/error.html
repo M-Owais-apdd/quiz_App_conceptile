@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+ error
+{% endblock title %}
+
+{% block content %}
+<h1>Error</h1>
+<p>{{ error }}</p>
+<a href="{% url 'start_quiz' %}">Back to Start</a>
+{% endblock content %}
